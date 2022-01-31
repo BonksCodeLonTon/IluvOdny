@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta charset="UTF-8" />
+    <title>Happy New Year</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body style="margin: 0px">
+    <audio autoplay loop>
+      <source src="music/music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <canvas></canvas>
+    <div id="imgTxt">
+      <span id="Txt"></span> <br />
+      <span id="tmp"></span>
+      <img id="img" src="" />
+    </div>
+    <div id="heartTxt">
+      <span id="clickMe">Click mín</span>
+      <div id="heart">
+        <button id="button" onclick="play()"></button>
+      </div>
+    </div>
+    <div id="content">
+      <h2 id="together">We have been together</h2>
+      <div id="timer">
+        <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes
+        <b id="s"></b> Seconds
+      </div>
+    </div>
+
+    <div id="typeDiv">
+      <span id="txt1"></span> <br />
+      <span id="txt2"></span>
+    </div>
+
+    <script>
+      var ok = 0;
+      var flag = 1;
+      var myImage = document.getElementById("img");
+      var myTxt = document.getElementById("Txt");
+      var imageArray = [
+        "pic/pic1.png",
+        "pic/pic2.png",
+        "pic/pic3.png",
+        "pic/pic4.png",
+        "pic/pic5.png",
+        "pic/pic6.png",
+        "pic/pic7.png",
+        "pic/pic8.png",
+        "pic/pic9/png",
+        "pic/pic10.png",
+        "pic/pic11.png",
+      ];
+      var imageIndex = 0;
+      var txtArray = [
+        "Vậy là qua 1 năm nữa dồi",
+        "Năm 2021 mặc dù có nhiều chuyện xảy ra zl",
+        "Nhưng may mắn là bạng vẫn bên mị (｡･ω･｡)ﾉ♡",
+        "Arigathanks so muchhh",
+        "I luv u pặc pặc",
+        "Hi vọng những năm sau được đón giao thừa cùng bạng~o(≧v≦)o",
+        "Xèng lì xì zề đà nẽn gùi nhận nhe bạng(/ω＼)",
+        "Năm mới chúc bạng giàu zll!!!",
+        "Thật nhìu sức khoẻ nựa(･∀･)",
+        "And kiếm được 1 công việc hợp vứi bạng",
+        "Túm cái quần lại là iu bạng nhìu zl",
+        "Hi vọng được về quê bạng nấu pánh chưn",
+        "Luv(๑òωó๑)۶",
+        "Viết xong thấy mình sến zl :D",
+      ];
+      var len = imageArray.length;
+      var t = 0;
+    </script>
+
+    <script type="text/javascript" src="./js/stars.js"></script>
+    <script type="text/javascript" src="./js/typeWriter.js"></script>
+    <script type="text/javascript" src="./js/date.js"></script>
+    <script type="text/javascript" src="./js/playImg.js"></script>
+  </body>
+</html>
